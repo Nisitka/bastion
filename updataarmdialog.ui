@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>updataARMDialog</class>
+ <widget class="QDialog" name="updataARMDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>894</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="nameARMLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>17</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Индитификатор АРМ:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="nameARMLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="T_ARMLabel">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>90</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Наработка на отказ:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="timeWorkARMLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>Проработавшее время:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="T_ARMLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="timeWorkARMLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="nextARMpushButton">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/icons8_right.png</normaloff>:/icons8_right.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backARMpushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>20</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/icons8_left.png</normaloff>:/icons8_left.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ed_1">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>90</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ч</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ed_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>120</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ч</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>811</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteARMpushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Удалить АРМ</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>150</y>
+     <width>161</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Человеческий фактор</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>70</y>
+     <width>21</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>301</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitpushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>360</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выйти из редактора</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="upDataARMButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>310</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Применить изменения</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>371</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="stackedDiagram">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>70</y>
+     <width>511</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="page1"/>
+   <widget class="QWidget" name="page2"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>nextARMpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>nextARM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>388</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>436</x>
+     <y>37</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>backARMpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>backARM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>T_ARMLineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>editARMtext(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>253</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nameARMLineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>editARMtext(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>timeWorkARMLineEdit</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>editARMtext(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>upDataARMButton</sender>
+   <signal>clicked()</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>editARMbutton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>260</x>
+     <y>330</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>closeEditARMbutton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>182</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>241</x>
+     <y>380</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteARMpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>updataARMDialog</receiver>
+   <slot>deleteARMbutton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>60</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>nextARM()</slot>
+  <slot>backARM()</slot>
+  <slot>editARMtext(QString)</slot>
+  <slot>editARMbutton()</slot>
+  <slot>closeEditARMbutton()</slot>
+  <slot>deleteARMbutton()</slot>
+ </slots>
+</ui>

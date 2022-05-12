@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>buildFunctionGroupDialog</class>
+ <widget class="QDialog" name="buildFunctionGroupDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="ARMgroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>351</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>АРМ</string>
+   </property>
+   <widget class="QLineEdit" name="nameARMLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>30</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameARMLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Индентификатор АРМ:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addARMButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить АРМ в группу</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="ParamGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>331</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Показатели надежности</string>
+    </property>
+    <widget class="QLabel" name="workTimeLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Наработка на отказ ЭВМ:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="workTimeLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ed_1">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ч</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ed_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>16</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ч</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="workRealTimeLabel">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Текущее время работы ЭВМ:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="workRealTimeLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="PeopleFactorCheckBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>301</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Человеческий фактор</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="ReserveGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>189</y>
+      <width>331</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Резерв</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="optionsTestingGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>351</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Настройки тестирования функциональной группы</string>
+   </property>
+   <widget class="QLabel" name="numTestLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Колличество тестов:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="numTestLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>30</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="FinishPushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Произвести рассчет показателей</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TimeTestLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Длительность тестирования:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ed_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>16</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ч</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TimeTestLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>60</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="ARMsGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>341</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Функциональная группа</string>
+   </property>
+   <widget class="QTextEdit" name="ARMsTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>321</width>
+      <height>391</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ListARMLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Список АРМ</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameFGLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Индентификатор ФГ:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameFGLineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="updataARMPushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Редактировать список АРМ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteARMPushButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>480</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Очистить список АРМ</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addARMButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildFunctionGroupDialog</receiver>
+   <slot>add_ARM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FinishPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildFunctionGroupDialog</receiver>
+   <slot>calculate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>deleteARMPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildFunctionGroupDialog</receiver>
+   <slot>clearListARM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>604</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>585</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>updataARMPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildFunctionGroupDialog</receiver>
+   <slot>editListARM()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>454</x>
+     <y>438</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>487</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_ARM()</slot>
+  <slot>calculate()</slot>
+  <slot>clearListARM()</slot>
+  <slot>editListARM()</slot>
+ </slots>
+</ui>

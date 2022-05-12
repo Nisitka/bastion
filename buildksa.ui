@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>buildKSA</class>
+ <widget class="QDialog" name="buildKSA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1343</width>
+    <height>845</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget_8">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>360</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_8">
+    <item>
+     <widget class="QPushButton" name="pushButton_08">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_7">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>380</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <widget class="QPushButton" name="pushButton_07">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>150</y>
+     <width>122</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="pushButton_02">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>530</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_6">
+    <item>
+     <widget class="QPushButton" name="pushButton_06">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>260</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QPushButton" name="pushButton_05">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>430</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <widget class="QPushButton" name="pushButton_04">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_arm">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>1071</width>
+     <height>691</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>110</y>
+     <width>122</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_01">
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>280</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="pushButton_03">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>-30</y>
+     <width>20</width>
+     <height>871</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="OptionsTestingGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>410</y>
+     <width>251</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Опции тестирования КСА</string>
+   </property>
+   <widget class="QCheckBox" name="TechnogenicCheckBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>231</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Техногенные события</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analysisPushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Анализ функциональной надежности</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="numCalculetedInfoLabel">
+   <property name="geometry">
+    <rect>
+     <x>293</x>
+     <y>770</y>
+     <width>391</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Инициализированно функциональных групп:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numCalculetedInfoValueLabel">
+   <property name="geometry">
+    <rect>
+     <x>693</x>
+     <y>770</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0 из 8</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="optionInteractionsGroupBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>29</y>
+     <width>251</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Взаимодесйствие функциональных групп</string>
+   </property>
+   <widget class="QPushButton" name="ImportancePushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Важность ФГ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SwitchingPushButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Коммутация КСА</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="SaveWorkPushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/floppy-disk.png</normaloff>:/floppy-disk.png</iconset>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>750</y>
+     <width>1021</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_9">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>130</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_9">
+    <item>
+     <widget class="QPushButton" name="pushButton_09">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_10">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>560</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_10">
+    <item>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_11">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>660</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_11">
+    <item>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_12">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>660</y>
+     <width>122</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_12">
+    <item>
+     <widget class="QPushButton" name="pushButton_12">
+      <property name="text">
+       <string>Инициализировать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_arm</zorder>
+  <zorder>verticalLayoutWidget_8</zorder>
+  <zorder>verticalLayoutWidget_7</zorder>
+  <zorder>verticalLayoutWidget_2</zorder>
+  <zorder>verticalLayoutWidget_6</zorder>
+  <zorder>verticalLayoutWidget_5</zorder>
+  <zorder>verticalLayoutWidget_4</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+  <zorder>verticalLayoutWidget_3</zorder>
+  <zorder>line</zorder>
+  <zorder>OptionsTestingGroupBox</zorder>
+  <zorder>numCalculetedInfoLabel</zorder>
+  <zorder>numCalculetedInfoValueLabel</zorder>
+  <zorder>optionInteractionsGroupBox</zorder>
+  <zorder>SaveWorkPushButton</zorder>
+  <zorder>progressBar</zorder>
+  <zorder>verticalLayoutWidget_9</zorder>
+  <zorder>verticalLayoutWidget_10</zorder>
+  <zorder>verticalLayoutWidget_11</zorder>
+  <zorder>verticalLayoutWidget_12</zorder>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_01</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>401</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1047</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_05</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>959</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1047</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_07</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>948</x>
+     <y>431</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1048</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_02</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>216</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1046</x>
+     <y>273</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_03</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1047</x>
+     <y>318</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_08</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>607</x>
+     <y>411</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1048</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_06</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>938</x>
+     <y>581</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1046</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_04</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1046</x>
+     <y>449</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>analysisPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>analysisKSAPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1069</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1036</x>
+     <y>622</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ImportancePushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>openImportaceFGdialog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1114</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1053</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_09</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>730</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1092</x>
+     <y>616</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_10</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>189</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1093</x>
+     <y>653</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_12</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>700</x>
+     <y>706</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1093</x>
+     <y>695</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>buildKSA</receiver>
+   <slot>buildFunctionGroupPushButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>697</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1094</x>
+     <y>740</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>buildFunctionGroupPushButton()</slot>
+  <slot>analysisKSAPushButton()</slot>
+  <slot>openImportaceFGdialog()</slot>
+ </slots>
+</ui>
